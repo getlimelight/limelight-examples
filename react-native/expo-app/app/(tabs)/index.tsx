@@ -13,9 +13,7 @@ import { ApolloClient, HttpLink, InMemoryCache, gql } from "@apollo/client";
 import { ApolloProvider } from "@apollo/client/react";
 import { Limelight } from "@getlimelight/sdk";
 
-Limelight.connect({
-  projectKey: "your_project_key_here",
-});
+Limelight.connect();
 
 const apolloClient = new ApolloClient({
   link: new HttpLink({ uri: "https://rickandmortyapi.com/graphql" }),
